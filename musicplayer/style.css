@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.musicapp{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading h1,h6{
+    margin: 25px 0 15px 0;
+    text-align: center;
+    font-size: 40px;
+}
+.pads{
+    width: 100%;
+    background: skyblue;
+ display: flex;
+}
+.pads >div{
+    width: 100px;
+    height: 180px;
+    flex: 1;
+}
+.pad1 {
+    background: #60d394;
+  }
+  .pad2 {
+    background: #d36060;
+  }
+  .pad3 {
+    background: #c060d3;
+  }
+  .pad4 {
+    background: #d3d160;
+  }
+  .pad5 {
+    background: #606bd3;
+  }
+  .circles > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+  }
+  @keyframes jump{
+      0%{bottom: 0%;
+        left: 20%;}
+      40%{bottom: 40%;
+        left: 40%;}
+      70%{bottom: 65%;
+        left: 75%;}
+      100%{bottom: 0%;
+        left: 100%;}
+  }
+  @keyframes jumpa{
+    0%{bottom: 0%;
+      left: 100%;}
+    40%{bottom: 65%;
+      left: 75%;}
+    70%{bottom: 40%;
+      left: 40%;}
+    100%{bottom: 0%;
+      left: 0%;}
+}
+@keyframes jumpaa{
+    0%{bottom: 0%;
+      left: 30%;}
+    50%{bottom: 60%;
+      left: 60%;}
+    100%{bottom: 0%;
+      left: 100%;}
+}
+@keyframes jumpaaa{
+    0%{bottom: 0%;
+      left: 100%;}
+    50%{bottom: 60%;
+      left: 60%;}
+    100%{bottom: 0%;
+      left: 30%;}
+}
